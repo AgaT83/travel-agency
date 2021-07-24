@@ -1,0 +1,15 @@
+.switchWrapper {
+  position: relative;
+  @keyframes moveUp {
+    from {top: 200px;}
+    to {top: 0px;}
+  }
+
+  > :first-child ~ * {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    animation: moveUp 1s linear;
+  }
+}
