@@ -9,7 +9,7 @@ const OrderOptionNumber = ({currentValue, limits, setOptionValue}) => (
 
 OrderOptionNumber.propTypes = {
   name: PropTypes.string,
-  currentValue: PropTypes.number,
+  currentValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   limits: PropTypes.object,
   setOptionValue: PropTypes.func,
 };
